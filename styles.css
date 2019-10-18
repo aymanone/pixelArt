@@ -25,6 +25,22 @@ td {
 #colorPicker{
    position: absolute;
 }
+#erasePicker{
+  font-size:30px;
+  background-color: green;
+  min-width: 25%;
+  position: absolute;
+  right:10%;
+ flex-direction: row;
+ flex-grow: 1;
+ display:none;
+  
+
+  
+}
+input[type="radio"], label{
+  vertical-align: baseline;
+}
 
 table {
   border-collapse: collapse;

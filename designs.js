@@ -3,6 +3,9 @@ let colorPicker=document.querySelector("#colorPicker");
 // Select size input
 let inputHeight=document.querySelector("#inputHeight");
 let inputWidth=document.querySelector("#inputWidth");
+// the erase selector and erase form
+let eraseForm=document.querySelector("#erasePicker");
+let noErase=document.querySelector("#no");
 // When size is submitted by the user, call makeGrid()
 // attach event listeners
 let sizeSubmit=document.querySelector("#sizePicker").querySelector("input[type='submit']");
@@ -26,15 +29,16 @@ function makeGrid(e) {
     newGrid+=newRow;
   }
   colorPicker.style.left="25%";
-  
-  
+  eraseForm.style.display="flex"
  table.innerHTML=newGrid;
 }
 function colorCell(e){
   // use event bubbling 
+  
   let cell=e.target;
+
   let color=colorPicker.value;
-  cell.style.backgroundColor=color;
+  cell.style.backgroundColor=(noErase.checked)?color:"white";
 }
 
 
