@@ -29,7 +29,7 @@ function makeGrid(e) {
     newGrid+=newRow;
   }
   colorPicker.style.left="25%";
-  eraseForm.style.display="flex"
+  eraseForm.style.display="flex";
  table.innerHTML=newGrid;
 }
 function colorCell(e){
